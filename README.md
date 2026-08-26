@@ -28,7 +28,7 @@ A fully responsive, pixel-perfect clone of the Amazon homepage built from scratc
 ```text
 ├── .gitignore             # Configured git ignore file
 ├── README.md              # Detailed documentation
-├── amazon.html            # Main page markup file
+├── index.html             # Main page markup file
 ├── style.css              # Custom styling sheet
 └── [assets]               # Image dependencies (JPG, PNG, WEBP)
 ```
@@ -47,7 +47,7 @@ You can preview the page locally with these simple steps:
    ```bash
    cd amazon-clone
    ```
-3. Open `amazon.html` directly in your preferred web browser, or run it using a local server extension (e.g., Live Server in VS Code).
+3. Open `index.html` directly in your preferred web browser, or run it using a local server extension (e.g., Live Server in VS Code).
 
 ---
 
