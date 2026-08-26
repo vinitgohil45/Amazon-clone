@@ -63,9 +63,32 @@
                 <!-- <i class="fa-solid fa-caret-down" style="color: #bdbfc1;"></i> -->
                 </div>
 
-            <div class="nav-singin border">
+            <div class="nav-singin border dropdown-trigger">
                 <p><span>Hello, sign in</span></p>
-                <p class="nav-second">Account & lists</p>
+                <p class="nav-second">Account & lists <i class="fa-solid fa-caret-down" style="font-size: 8px; color: #a7acb2; margin-left: 2px;"></i></p>
+                
+                <!-- Account Hover Dropdown -->
+                <div class="account-dropdown">
+                    <div class="dropdown-signin-btn-wrap">
+                        <button class="dropdown-signin-btn">Sign in</button>
+                        <p class="dropdown-new-cust">New customer? <a href="#">Start here.</a></p>
+                    </div>
+                    <div class="dropdown-lists-wrap">
+                        <div class="dropdown-col">
+                            <h3>Your Lists</h3>
+                            <a href="#">Create a List</a>
+                            <a href="#">Find a List or Registry</a>
+                        </div>
+                        <div class="dropdown-col">
+                            <h3>Your Account</h3>
+                            <a href="#">Your Account</a>
+                            <a href="#">Orders</a>
+                            <a href="#">Recommendations</a>
+                            <a href="#">Browsing History</a>
+                            <a href="#">Sign Out</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="nav-return border">
@@ -192,6 +215,82 @@
    </div>
 </div>
 </div>
+
+    <!-- Best Sellers Carousel Section -->
+    <div class="carousel-section">
+        <h2>Best Sellers in Electronics & Computers</h2>
+        <div class="carousel-container">
+            <button class="carousel-control prev" id="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="carousel-track" id="carousel-track">
+                <!-- Carousel items -->
+                <div class="carousel-item">
+                    <div class="carousel-img-wrap" style="background-image: url('gaming');"></div>
+                    <div class="carousel-info">
+                        <a href="#" class="carousel-title">Pro Gaming Headset with RGB Lighting and Microphone</a>
+                        <div class="carousel-rating">★★★★☆ (1,230)</div>
+                        <div class="carousel-price"><sup>$</sup>39<sup>99</sup></div>
+                        <button class="carousel-add-btn" data-product-id="c1" data-product-name="Pro Gaming Headset" data-product-price="39.99" data-product-img="gaming">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img-wrap" style="background-image: url('watch.jpg');"></div>
+                    <div class="carousel-info">
+                        <a href="#" class="carousel-title">Waterproof Sports Smartwatch with Heart Rate Monitor</a>
+                        <div class="carousel-rating">★★★★★ (450)</div>
+                        <div class="carousel-price"><sup>$</sup>59<sup>99</sup></div>
+                        <button class="carousel-add-btn" data-product-id="c2" data-product-name="Sports Smartwatch" data-product-price="59.99" data-product-img="watch.jpg">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img-wrap" style="background-image: url('mobile accessories.jpg');"></div>
+                    <div class="carousel-info">
+                        <a href="#" class="carousel-title">Wireless Fast Charger Stand 15W Compatible with iPhone/Android</a>
+                        <div class="carousel-rating">★★★★☆ (3,120)</div>
+                        <div class="carousel-price"><sup>$</sup>19<sup>99</sup></div>
+                        <button class="carousel-add-btn" data-product-id="c3" data-product-name="Wireless Fast Charger" data-product-price="19.99" data-product-img="mobile accessories.jpg">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img-wrap" style="background-image: url('pc-img.jpg');"></div>
+                    <div class="carousel-info">
+                        <a href="#" class="carousel-title">Dual Monitor Arm Mount Stand - Height Adjustable Heavy Duty</a>
+                        <div class="carousel-rating">★★★★☆ (890)</div>
+                        <div class="carousel-price"><sup>$</sup>89<sup>95</sup></div>
+                        <button class="carousel-add-btn" data-product-id="c4" data-product-name="Dual Monitor Arm Stand" data-product-price="89.95" data-product-img="pc-img.jpg">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img-wrap" style="background-image: url('phone');"></div>
+                    <div class="carousel-info">
+                        <a href="#" class="carousel-title">Ultra-Slim Shockproof Silicone Phone Case with Kickstand</a>
+                        <div class="carousel-rating">★★★★★ (2,890)</div>
+                        <div class="carousel-price"><sup>$</sup>14<sup>99</sup></div>
+                        <button class="carousel-add-btn" data-product-id="c5" data-product-name="Silicone Phone Case" data-product-price="14.99" data-product-img="phone">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img-wrap" style="background-image: url('toy.jpg');"></div>
+                    <div class="carousel-info">
+                        <a href="#" class="carousel-title">Classic Educational Stacking Blocks Set (60-Pieces)</a>
+                        <div class="carousel-rating">★★★★☆ (1,450)</div>
+                        <div class="carousel-price"><sup>$</sup>24<sup>99</sup></div>
+                        <button class="carousel-add-btn" data-product-id="c6" data-product-name="Educational Stacking Blocks" data-product-price="24.99" data-product-img="toy.jpg">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img-wrap" style="background-image: url('Nike-Louis-Vuitton-2.webp');"></div>
+                    <div class="carousel-info">
+                        <a href="#" class="carousel-title">Comfort Running Sneakers Lightweight Athletic Training Shoes</a>
+                        <div class="carousel-rating">★★★★★ (720)</div>
+                        <div class="carousel-price"><sup>$</sup>79<sup>99</sup></div>
+                        <button class="carousel-add-btn" data-product-id="c7" data-product-name="Comfort Running Sneakers" data-product-price="79.99" data-product-img="Nike-Louis-Vuitton-2.webp">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control next" id="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+
    <footer>
     <div class="foot-panel1">
     Back to Top
@@ -251,6 +350,28 @@
             © 1996-2024, Amazon.com, Inc. or its affiliates
         </div>
     </div>
+    <!-- Cart Drawer -->
+    <div id="cart-drawer" class="cart-drawer">
+        <div class="cart-drawer-header">
+            <h2>Shopping Cart</h2>
+            <span class="close-cart-drawer" id="close-cart-drawer">&times;</span>
+        </div>
+        <div class="cart-drawer-items" id="cart-drawer-items">
+            <p class="empty-cart-msg">Your cart is empty.</p>
+        </div>
+        <div class="cart-drawer-footer" id="cart-drawer-footer">
+            <div class="cart-subtotal">
+                <span>Subtotal:</span>
+                <span id="cart-subtotal-val">$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div id="cart-drawer-overlay" class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+
+    <!-- Search Suggestions container -->
+    <div id="search-suggestions" class="search-suggestions-dropdown"></div>
+
    </footer>
-</body>
+ </body>
 </html>
