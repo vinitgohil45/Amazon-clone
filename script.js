@@ -95,6 +95,38 @@ const productDetails = {
         rating: "4.5 ★★★★☆ (5,210 reviews)",
         image: "mobile accessories.jpg",
         description: "Keep your devices safe and powered up with durable shockproof phone cases, fast wireless chargers, and anti-glare screen protectors."
+    },
+    "box13": {
+        id: "box13",
+        title: "Explore Men's Fashion",
+        price: "49.99",
+        rating: "4.6 ★★★★☆ (1,120 reviews)",
+        image: "mens shop",
+        description: "Upgrade your style with premium cotton t-shirts, jackets, and smart casual outfits. Designed for durability and effortless everyday fashion."
+    },
+    "box14": {
+        id: "box14",
+        title: "Sports Shoes & Sneakers",
+        price: "64.99",
+        rating: "4.7 ★★★★☆ (980 reviews)",
+        image: "nike",
+        description: "Premium lightweight athletic shoes. High-traction soles and breathable mesh design ensure maximum comfort during runs or active workouts."
+    },
+    "box15": {
+        id: "box15",
+        title: "Kitchen & Dining Essentials",
+        price: "34.50",
+        rating: "4.8 ★★★★☆ (2,050 reviews)",
+        image: "box6_image.jpg",
+        description: "Durable non-stick cookware, organizers, and modern utensils to simplify your cooking experience. Crafted with premium food-safe materials."
+    },
+    "box16": {
+        id: "box16",
+        title: "Pet Care & Accessories",
+        price: "18.99",
+        rating: "4.7 ★★★★☆ (1,420 reviews)",
+        image: "box7_image.jpg",
+        description: "Premium pet grooming supplies, toys, and comfy bedding for your furry friends. Keep them healthy, happy, and active."
     }
 };
 
@@ -218,7 +250,7 @@ function setupCartAndDrawer() {
             if (!box) return;
 
             let productKey = "";
-            for (let i = 1; i <= 12; i++) {
+            for (let i = 1; i <= 16; i++) {
                 if (box.classList.contains(`box${i}`)) {
                     productKey = `box${i}`;
                     break;
@@ -522,7 +554,7 @@ function setupProductModals() {
     const cards = document.querySelectorAll(".shop-section .box");
     cards.forEach((card) => {
         let productKey = "";
-        for (let i = 1; i <= 12; i++) {
+        for (let i = 1; i <= 16; i++) {
             if (card.classList.contains(`box${i}`)) {
                 productKey = `box${i}`;
                 break;
