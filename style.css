@@ -137,6 +137,7 @@
 /* Language selector styling */
 .nav-language {
     display: flex;
+    flex-direction: row !important;
     align-items: center;
     gap: 5px;
     padding: 4px 6px;
