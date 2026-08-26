@@ -146,6 +146,15 @@ function setupHeroSlider() {
     heroSection.appendChild(leftBtn);
     heroSection.appendChild(rightBtn);
 
+    const updateTheme = () => {
+        const activeImg = heroImages[currentHeroIndex];
+        if (activeImg === "hero_image2.jgp.jpg") {
+            document.body.classList.add("dark-bg-theme");
+        } else {
+            document.body.classList.remove("dark-bg-theme");
+        }
+    };
+
     const changeHero = (direction) => {
         if (direction === "next") {
             currentHeroIndex = (currentHeroIndex + 1) % heroImages.length;
@@ -153,10 +162,14 @@ function setupHeroSlider() {
             currentHeroIndex = (currentHeroIndex - 1 + heroImages.length) % heroImages.length;
         }
         heroSection.style.backgroundImage = `url('${heroImages[currentHeroIndex]}')`;
+        updateTheme();
     };
 
     leftBtn.addEventListener("click", () => changeHero("prev"));
     rightBtn.addEventListener("click", () => changeHero("next"));
+
+    // Set initial theme
+    updateTheme();
 
     // Auto-slide every 8 seconds
     setInterval(() => changeHero("next"), 8000);

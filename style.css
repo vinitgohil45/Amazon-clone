@@ -1256,4 +1256,32 @@ ul a{
     }
 }
 
+/* ==========================================
+   Dynamic Page Background Theme
+   ========================================== */
+.shop-section,
+.carousel-section,
+body {
+    transition: background-color 0.5s ease;
+}
+
+.carousel-section h2 {
+    transition: color 0.5s ease;
+}
+
+/* Dark theme active classes */
+.dark-bg-theme {
+    background-color: #0d0e1b;
+}
+
+.dark-bg-theme .shop-section,
+.dark-bg-theme .carousel-section {
+    background-color: #0d0e1b;
+}
+
+.dark-bg-theme .carousel-section h2 {
+    color: #ffffff;
+}
+
+
 
