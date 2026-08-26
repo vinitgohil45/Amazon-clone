@@ -15,14 +15,16 @@
 
 .nav-logo{
     height: 50px;
-    width: 100px;
+    width: 110px;
 }
 
 .logo{
     background-image: url(amazon_logo.png);
-    background-size: cover;
-    height: 40px;
-    width: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35px;
+    width: 100%;
 }
 
 .border {
@@ -301,8 +303,10 @@ ul a{
 
 .logo{
     background-image: url(amazon_logo.png);
-    background-size: cover;
-    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35px;
     width: 100px;
 }
 .foot-panel4{
