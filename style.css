@@ -13,18 +13,19 @@
     justify-content: space-evenly;
 }
 
-.nav-logo{
-    height: 50px;
-    width: 110px;
+.nav-logo {
+    height: 40px !important;
+    width: 120px !important;
 }
 
-.logo{
+.logo {
     background-image: url(amazon_logo.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 35px;
+    background-position: left center;
+    height: 100%;
     width: 100%;
+    margin-top: 2px;
 }
 
 .border {
